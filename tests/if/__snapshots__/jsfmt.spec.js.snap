@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`js.eex - eex-verify: js.eex 1`] = `
+Object {
+  Symbol(raw): "<div>
+  <%= if ss do %>
+    ss
+  <% else %>
+sss  
+  <% end %>
+    </div>
+
+    <div>
+     <%= if ss do %>
+    ss
+     <%= if ss do %>
+    ss
+  <% else %>
+sss  
+  <% end %>
+  <% else %>
+   <%= if ss do %>
+    ss
+  <% else %>
+sss  
+  <% end %>
+sss  
+  <% end %>
+    </div>
+
+
+<div
+  <%= ddd %>
+    class=\\"dd\\"
+></div>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<div>
+  <%= if ss do %>
+    ss
+  <% else %>
+    sss
+  <% end %>
+</div>
+
+<div>
+  <%= if ss do %>
+    ss
+    <%= if ss do %>
+      ss
+    <% else %>
+      sss
+    <% end %>
+  <% else %>
+    <%= if ss do %>
+      ss
+    <% else %>
+      sss
+    <% end %>
+    sss
+  <% end %>
+</div>
+
+<div <%= dd %> class=\\"dd\\"></div>
+",
+}
+`;

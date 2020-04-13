@@ -1,0 +1,7 @@
+<div
+<%= if bar13 do %>
+    class="attribute"
+class="attribute"
+
+<% end %>
+></div>

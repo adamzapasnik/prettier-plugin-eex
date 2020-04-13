@@ -1,0 +1,30 @@
+<div class="   <%= "dd" %>">
+<%= "f" %>
+</div>
+
+
+<div>
+<%= a = "b" %>
+</div>
+<div>
+  <%= a = "b" %>
+  <div
+  >
+    <span>dddddddddddddmdddddddmdddddddmdddddddmdddddddmdddddddmdddddddmdddddddmdddddddmdddddddmdddddddmdm</span>
+  </div>
+</div>
+
+<%= if ff do %>
+<% "ff" %>
+<% end %>
+
+
+<%= if ff do %>
+bb
+<% else %>
+<% "ff" %>
+<%= form_for @conn, Routes.foo_path(@conn, :new), [as: :foo], fn f -> %>
+<%= text_input f, :for %>
+<%= submit "Search" %>
+<% end %>
+<% end %>
