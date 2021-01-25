@@ -67,7 +67,7 @@ end
 It's important to add node modules path.
 
 ```json
-"prettier.prettierPath": "./assets/node_modules"
+"prettier.prettierPath": "./assets/node_modules/prettier"
 ```
 
 ## How to deal with bugs?
