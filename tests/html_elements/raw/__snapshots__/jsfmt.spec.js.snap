@@ -1,0 +1,839 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`canvas.html.eex 1`] = `
+====================================options=====================================
+parsers: ["eex"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+
+<canvas>
+  <% 32 %>
+</canvas>
+<canvas> <% 32 %> </canvas>
+<canvas>32<% 32 %>32</canvas>
+<canvas>32 <% 32 %> 32</canvas>
+
+<canvas class='<% 32 %>'><% 32 %></canvas>
+<canvas class='<% 32 %>'>
+<% 32 %>
+</canvas>
+<canvas class='<% 32 %>'> <% 32 %> </canvas>
+<canvas class='<% 32 %>'>32<% 32 %>32</canvas>
+<canvas class='<% 32 %>'>32 <% 32 %> 32</canvas>
+
+<div>
+<canvas>
+  <% 32 %>
+</canvas>
+<canvas> <% 32 %> </canvas>
+<canvas>32<% 32 %>32</canvas>
+<canvas>32 <% 32 %> 32</canvas>
+
+<canvas class='<% 32 %>'><% 32 %></canvas>
+<canvas class='<% 32 %>'>
+<% 32 %>
+</canvas>
+<canvas class='<% 32 %>'> <% 32 %> </canvas>
+<canvas class='<% 32 %>'>32<% 32 %>32</canvas>
+<canvas class='<% 32 %>'>32 <% 32 %> 32</canvas>
+</div>
+
+=====================================output=====================================
+<canvas> <% 32 %> </canvas>
+<canvas> <% 32 %> </canvas>
+<canvas>32<% 32 %>32</canvas>
+<canvas>32 <% 32 %> 32</canvas>
+
+<canvas class="<% 32 %>"><% 32 %></canvas>
+<canvas class="<% 32 %>"> <% 32 %> </canvas>
+<canvas class="<% 32 %>"> <% 32 %> </canvas>
+<canvas class="<% 32 %>">32<% 32 %>32</canvas>
+<canvas class="<% 32 %>">32 <% 32 %> 32</canvas>
+
+<div>
+  <canvas> <% 32 %> </canvas>
+  <canvas> <% 32 %> </canvas>
+  <canvas>32<% 32 %>32</canvas>
+  <canvas>32 <% 32 %> 32</canvas>
+
+  <canvas class="<% 32 %>"><% 32 %></canvas>
+  <canvas class="<% 32 %>"> <% 32 %> </canvas>
+  <canvas class="<% 32 %>"> <% 32 %> </canvas>
+  <canvas class="<% 32 %>">32<% 32 %>32</canvas>
+  <canvas class="<% 32 %>">32 <% 32 %> 32</canvas>
+</div>
+
+================================================================================
+`;
+
+exports[`code.html.eex 1`] = `
+====================================options=====================================
+parsers: ["eex"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+
+<code>
+  <% 32 %>
+</code>
+<code> <% 32 %> </code>
+<code>32<% 32 %>32</code>
+<code>32 <% 32 %> 32</code>
+
+<code class='<% 32 %>'><% 32 %></code>
+<code class='<% 32 %>'>
+<% 32 %>
+</code>
+<code class='<% 32 %>'> <% 32 %> </code>
+<code class='<% 32 %>'>32<% 32 %>32</code>
+<code class='<% 32 %>'>32 <% 32 %> 32</code>
+
+<div>
+<code>
+  <% 32 %>
+</code>
+<code> <% 32 %> </code>
+<code>32<% 32 %>32</code>
+<code>32 <% 32 %> 32</code>
+
+<code class='<% 32 %>'><% 32 %></code>
+<code class='<% 32 %>'>
+<% 32 %>
+</code>
+<code class='<% 32 %>'> <% 32 %> </code>
+<code class='<% 32 %>'>32<% 32 %>32</code>
+<code class='<% 32 %>'>32 <% 32 %> 32</code>
+</div>
+
+=====================================output=====================================
+<code> <% 32 %> </code>
+<code> <% 32 %> </code>
+<code>32<% 32 %>32</code>
+<code>32 <% 32 %> 32</code>
+
+<code class="<% 32 %>"><% 32 %></code>
+<code class="<% 32 %>"> <% 32 %> </code>
+<code class="<% 32 %>"> <% 32 %> </code>
+<code class="<% 32 %>">32<% 32 %>32</code>
+<code class="<% 32 %>">32 <% 32 %> 32</code>
+
+<div>
+  <code> <% 32 %> </code>
+  <code> <% 32 %> </code>
+  <code>32<% 32 %>32</code>
+  <code>32 <% 32 %> 32</code>
+
+  <code class="<% 32 %>"><% 32 %></code>
+  <code class="<% 32 %>"> <% 32 %> </code>
+  <code class="<% 32 %>"> <% 32 %> </code>
+  <code class="<% 32 %>">32<% 32 %>32</code>
+  <code class="<% 32 %>">32 <% 32 %> 32</code>
+</div>
+
+================================================================================
+`;
+
+exports[`kbd.html.eex 1`] = `
+====================================options=====================================
+parsers: ["eex"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+
+<kbd>
+  <% 32 %>
+</kbd>
+<kbd> <% 32 %> </kbd>
+<kbd>32<% 32 %>32</kbd>
+<kbd>32 <% 32 %> 32</kbd>
+
+<kbd class='<% 32 %>'><% 32 %></kbd>
+<kbd class='<% 32 %>'>
+<% 32 %>
+</kbd>
+<kbd class='<% 32 %>'> <% 32 %> </kbd>
+<kbd class='<% 32 %>'>32<% 32 %>32</kbd>
+<kbd class='<% 32 %>'>32 <% 32 %> 32</kbd>
+
+<div>
+<kbd>
+  <% 32 %>
+</kbd>
+<kbd> <% 32 %> </kbd>
+<kbd>32<% 32 %>32</kbd>
+<kbd>32 <% 32 %> 32</kbd>
+
+<kbd class='<% 32 %>'><% 32 %></kbd>
+<kbd class='<% 32 %>'>
+<% 32 %>
+</kbd>
+<kbd class='<% 32 %>'> <% 32 %> </kbd>
+<kbd class='<% 32 %>'>32<% 32 %>32</kbd>
+<kbd class='<% 32 %>'>32 <% 32 %> 32</kbd>
+</div>
+
+=====================================output=====================================
+<kbd> <% 32 %> </kbd>
+<kbd> <% 32 %> </kbd>
+<kbd>32<% 32 %>32</kbd>
+<kbd>32 <% 32 %> 32</kbd>
+
+<kbd class="<% 32 %>"><% 32 %></kbd>
+<kbd class="<% 32 %>"> <% 32 %> </kbd>
+<kbd class="<% 32 %>"> <% 32 %> </kbd>
+<kbd class="<% 32 %>">32<% 32 %>32</kbd>
+<kbd class="<% 32 %>">32 <% 32 %> 32</kbd>
+
+<div>
+  <kbd> <% 32 %> </kbd>
+  <kbd> <% 32 %> </kbd>
+  <kbd>32<% 32 %>32</kbd>
+  <kbd>32 <% 32 %> 32</kbd>
+
+  <kbd class="<% 32 %>"><% 32 %></kbd>
+  <kbd class="<% 32 %>"> <% 32 %> </kbd>
+  <kbd class="<% 32 %>"> <% 32 %> </kbd>
+  <kbd class="<% 32 %>">32<% 32 %>32</kbd>
+  <kbd class="<% 32 %>">32 <% 32 %> 32</kbd>
+</div>
+
+================================================================================
+`;
+
+exports[`noscript.html.eex 1`] = `
+====================================options=====================================
+parsers: ["eex"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+
+<noscript>
+  <% 32 %>
+</noscript>
+<noscript> <% 32 %> </noscript>
+<noscript>32<% 32 %>32</noscript>
+<noscript>32 <% 32 %> 32</noscript>
+
+<noscript class='<% 32 %>'><% 32 %></noscript>
+<noscript class='<% 32 %>'>
+<% 32 %>
+</noscript>
+<noscript class='<% 32 %>'> <% 32 %> </noscript>
+<noscript class='<% 32 %>'>32<% 32 %>32</noscript>
+<noscript class='<% 32 %>'>32 <% 32 %> 32</noscript>
+
+<div>
+<noscript>
+  <% 32 %>
+</noscript>
+<noscript> <% 32 %> </noscript>
+<noscript>32<% 32 %>32</noscript>
+<noscript>32 <% 32 %> 32</noscript>
+
+<noscript class='<% 32 %>'><% 32 %></noscript>
+<noscript class='<% 32 %>'>
+<% 32 %>
+</noscript>
+<noscript class='<% 32 %>'> <% 32 %> </noscript>
+<noscript class='<% 32 %>'>32<% 32 %>32</noscript>
+<noscript class='<% 32 %>'>32 <% 32 %> 32</noscript>
+</div>
+
+=====================================output=====================================
+<noscript> <% 32 %> </noscript>
+<noscript> <% 32 %> </noscript>
+<noscript>32<% 32 %>32</noscript>
+<noscript>32 <% 32 %> 32</noscript>
+
+<noscript class="<% 32 %>"><% 32 %></noscript>
+<noscript class="<% 32 %>"> <% 32 %> </noscript>
+<noscript class="<% 32 %>"> <% 32 %> </noscript>
+<noscript class="<% 32 %>">32<% 32 %>32</noscript>
+<noscript class="<% 32 %>">32 <% 32 %> 32</noscript>
+
+<div>
+  <noscript> <% 32 %> </noscript>
+  <noscript> <% 32 %> </noscript>
+  <noscript>32<% 32 %>32</noscript>
+  <noscript>32 <% 32 %> 32</noscript>
+
+  <noscript class="<% 32 %>"><% 32 %></noscript>
+  <noscript class="<% 32 %>"> <% 32 %> </noscript>
+  <noscript class="<% 32 %>"> <% 32 %> </noscript>
+  <noscript class="<% 32 %>">32<% 32 %>32</noscript>
+  <noscript class="<% 32 %>">32 <% 32 %> 32</noscript>
+</div>
+
+================================================================================
+`;
+
+exports[`pre.html.eex 1`] = `
+====================================options=====================================
+parsers: ["eex"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+
+<pre>
+  <% 32 %>
+</pre>
+<pre> <% 32 %> </pre>
+<pre>32<% 32 %>32</pre>
+<pre>32 <% 32 %> 32</pre>
+
+<pre class='<% 32 %>'><% 32 %></pre>
+<pre class='<% 32 %>'>
+<% 32 %>
+</pre>
+<pre class='<% 32 %>'> <% 32 %> </pre>
+<pre class='<% 32 %>'>32<% 32 %>32</pre>
+<pre class='<% 32 %>'>32 <% 32 %> 32</pre>
+
+<div>
+<pre>
+  <% 32 %>
+</pre>
+<pre> <% 32 %> </pre>
+<pre>32<% 32 %>32</pre>
+<pre>32 <% 32 %> 32</pre>
+
+<pre class='<% 32 %>'><% 32 %></pre>
+<pre class='<% 32 %>'>
+<% 32 %>
+</pre>
+<pre class='<% 32 %>'> <% 32 %> </pre>
+<pre class='<% 32 %>'>32<% 32 %>32</pre>
+<pre class='<% 32 %>'>32 <% 32 %> 32</pre>
+</div>
+
+=====================================output=====================================
+<pre>
+  <% 32 %>
+</pre>
+<pre> <% 32 %> </pre>
+<pre>32<% 32 %>32</pre>
+<pre>32 <% 32 %> 32</pre>
+
+<pre class="<% 32 %>"><% 32 %></pre>
+<pre class="<% 32 %>">
+<% 32 %>
+</pre>
+<pre class="<% 32 %>"> <% 32 %> </pre>
+<pre class="<% 32 %>">32<% 32 %>32</pre>
+<pre class="<% 32 %>">32 <% 32 %> 32</pre>
+
+<div>
+  <pre>
+  <% 32 %>
+</pre
+  >
+  <pre> <% 32 %> </pre>
+  <pre>32<% 32 %>32</pre>
+  <pre>32 <% 32 %> 32</pre>
+
+  <pre class="<% 32 %>"><% 32 %></pre>
+  <pre class="<% 32 %>">
+<% 32 %>
+</pre
+  >
+  <pre class="<% 32 %>"> <% 32 %> </pre>
+  <pre class="<% 32 %>">32<% 32 %>32</pre>
+  <pre class="<% 32 %>">32 <% 32 %> 32</pre>
+</div>
+
+================================================================================
+`;
+
+exports[`rb.html.eex 1`] = `
+====================================options=====================================
+parsers: ["eex"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+
+<ruby>
+<rb>
+  <% 32 %>
+</rb>
+<rb> <% 32 %> </rb>
+<rb>32<% 32 %>32</rb>
+<rb>32 <% 32 %> 32</rb>
+<rb class='<% 32 %>'><% 32 %></rb>
+<rb class='<% 32 %>'>
+<% 32 %>
+</rb>
+<rb class='<% 32 %>'> <% 32 %> </rb>
+<rb class='<% 32 %>'>32<% 32 %>32</rb>
+<rb class='<% 32 %>'>32 <% 32 %> 32</rb>
+</ruby>
+
+<div>
+<ruby>
+<rb>
+  <% 32 %>
+</rb>
+<rb> <% 32 %> </rb>
+<rb>32<% 32 %>32</rb>
+<rb>32 <% 32 %> 32</rb>
+
+<rb class='<% 32 %>'><% 32 %></rb>
+<rb class='<% 32 %>'>
+<% 32 %>
+</rb>
+<rb class='<% 32 %>'> <% 32 %> </rb>
+<rb class='<% 32 %>'>32<% 32 %>32</rb>
+<rb class='<% 32 %>'>32 <% 32 %> 32</rb>
+</ruby>
+</div>
+
+=====================================output=====================================
+<ruby>
+  <rb> <% 32 %> </rb>
+  <rb> <% 32 %> </rb>
+  <rb>32<% 32 %>32</rb>
+  <rb>32 <% 32 %> 32</rb>
+  <rb class="<% 32 %>"><% 32 %></rb>
+  <rb class="<% 32 %>"> <% 32 %> </rb>
+  <rb class="<% 32 %>"> <% 32 %> </rb>
+  <rb class="<% 32 %>">32<% 32 %>32</rb>
+  <rb class="<% 32 %>">32 <% 32 %> 32</rb>
+</ruby>
+
+<div>
+  <ruby>
+    <rb> <% 32 %> </rb>
+    <rb> <% 32 %> </rb>
+    <rb>32<% 32 %>32</rb>
+    <rb>32 <% 32 %> 32</rb>
+
+    <rb class="<% 32 %>"><% 32 %></rb>
+    <rb class="<% 32 %>"> <% 32 %> </rb>
+    <rb class="<% 32 %>"> <% 32 %> </rb>
+    <rb class="<% 32 %>">32<% 32 %>32</rb>
+    <rb class="<% 32 %>">32 <% 32 %> 32</rb>
+  </ruby>
+</div>
+
+================================================================================
+`;
+
+exports[`rp.html.eex 1`] = `
+====================================options=====================================
+parsers: ["eex"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+
+<ruby>
+<rp>
+  <% 32 %>
+</rp>
+<rp> <% 32 %> </rp>
+<rp>32<% 32 %>32</rp>
+<rp>32 <% 32 %> 32</rp>
+<rp class='<% 32 %>'><% 32 %></rp>
+<rp class='<% 32 %>'>
+<% 32 %>
+</rp>
+<rp class='<% 32 %>'> <% 32 %> </rp>
+<rp class='<% 32 %>'>32<% 32 %>32</rp>
+<rp class='<% 32 %>'>32 <% 32 %> 32</rp>
+</ruby>
+
+<div>
+<ruby>
+<rp>
+  <% 32 %>
+</rp>
+<rp> <% 32 %> </rp>
+<rp>32<% 32 %>32</rp>
+<rp>32 <% 32 %> 32</rp>
+
+<rp class='<% 32 %>'><% 32 %></rp>
+<rp class='<% 32 %>'>
+<% 32 %>
+</rp>
+<rp class='<% 32 %>'> <% 32 %> </rp>
+<rp class='<% 32 %>'>32<% 32 %>32</rp>
+<rp class='<% 32 %>'>32 <% 32 %> 32</rp>
+</ruby>
+</div>
+
+=====================================output=====================================
+<ruby>
+  <rp><% 32 %></rp>
+  <rp><% 32 %></rp>
+  <rp>32<% 32 %>32</rp>
+  <rp>32 <% 32 %> 32</rp>
+  <rp class="<% 32 %>"><% 32 %></rp>
+  <rp class="<% 32 %>"><% 32 %></rp>
+  <rp class="<% 32 %>"><% 32 %></rp>
+  <rp class="<% 32 %>">32<% 32 %>32</rp>
+  <rp class="<% 32 %>">32 <% 32 %> 32</rp>
+</ruby>
+
+<div>
+  <ruby>
+    <rp><% 32 %></rp>
+    <rp><% 32 %></rp>
+    <rp>32<% 32 %>32</rp>
+    <rp>32 <% 32 %> 32</rp>
+
+    <rp class="<% 32 %>"><% 32 %></rp>
+    <rp class="<% 32 %>"><% 32 %></rp>
+    <rp class="<% 32 %>"><% 32 %></rp>
+    <rp class="<% 32 %>">32<% 32 %>32</rp>
+    <rp class="<% 32 %>">32 <% 32 %> 32</rp>
+  </ruby>
+</div>
+
+================================================================================
+`;
+
+exports[`rt.html.eex 1`] = `
+====================================options=====================================
+parsers: ["eex"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+
+<ruby>
+<rt>
+  <% 32 %>
+</rt>
+<rt> <% 32 %> </rt>
+<rt>32<% 32 %>32</rt>
+<rt>32 <% 32 %> 32</rt>
+<rt class='<% 32 %>'><% 32 %></rt>
+<rt class='<% 32 %>'>
+<% 32 %>
+</rt>
+<rt class='<% 32 %>'> <% 32 %> </rt>
+<rt class='<% 32 %>'>32<% 32 %>32</rt>
+<rt class='<% 32 %>'>32 <% 32 %> 32</rt>
+</ruby>
+
+<div>
+<ruby>
+<rt>
+  <% 32 %>
+</rt>
+<rt> <% 32 %> </rt>
+<rt>32<% 32 %>32</rt>
+<rt>32 <% 32 %> 32</rt>
+
+<rt class='<% 32 %>'><% 32 %></rt>
+<rt class='<% 32 %>'>
+<% 32 %>
+</rt>
+<rt class='<% 32 %>'> <% 32 %> </rt>
+<rt class='<% 32 %>'>32<% 32 %>32</rt>
+<rt class='<% 32 %>'>32 <% 32 %> 32</rt>
+</ruby>
+</div>
+
+=====================================output=====================================
+<ruby>
+  <rt> <% 32 %> </rt>
+  <rt> <% 32 %> </rt>
+  <rt>32<% 32 %>32</rt>
+  <rt>32 <% 32 %> 32</rt>
+  <rt class="<% 32 %>"><% 32 %></rt>
+  <rt class="<% 32 %>"> <% 32 %> </rt>
+  <rt class="<% 32 %>"> <% 32 %> </rt>
+  <rt class="<% 32 %>">32<% 32 %>32</rt>
+  <rt class="<% 32 %>">32 <% 32 %> 32</rt>
+</ruby>
+
+<div>
+  <ruby>
+    <rt> <% 32 %> </rt>
+    <rt> <% 32 %> </rt>
+    <rt>32<% 32 %>32</rt>
+    <rt>32 <% 32 %> 32</rt>
+
+    <rt class="<% 32 %>"><% 32 %></rt>
+    <rt class="<% 32 %>"> <% 32 %> </rt>
+    <rt class="<% 32 %>"> <% 32 %> </rt>
+    <rt class="<% 32 %>">32<% 32 %>32</rt>
+    <rt class="<% 32 %>">32 <% 32 %> 32</rt>
+  </ruby>
+</div>
+
+================================================================================
+`;
+
+exports[`rtc.html.eex 1`] = `
+====================================options=====================================
+parsers: ["eex"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+
+<ruby>
+<rtc>
+  <% 32 %>
+</rtc>
+<rtc> <% 32 %> </rtc>
+<rtc>32<% 32 %>32</rtc>
+<rtc>32 <% 32 %> 32</rtc>
+<rtc class='<% 32 %>'><% 32 %></rtc>
+<rtc class='<% 32 %>'>
+<% 32 %>
+</rtc>
+<rtc class='<% 32 %>'> <% 32 %> </rtc>
+<rtc class='<% 32 %>'>32<% 32 %>32</rtc>
+<rtc class='<% 32 %>'>32 <% 32 %> 32</rtc>
+</ruby>
+
+<div>
+<ruby>
+<rtc>
+  <% 32 %>
+</rtc>
+<rtc> <% 32 %> </rtc>
+<rtc>32<% 32 %>32</rtc>
+<rtc>32 <% 32 %> 32</rtc>
+
+<rtc class='<% 32 %>'><% 32 %></rtc>
+<rtc class='<% 32 %>'>
+<% 32 %>
+</rtc>
+<rtc class='<% 32 %>'> <% 32 %> </rtc>
+<rtc class='<% 32 %>'>32<% 32 %>32</rtc>
+<rtc class='<% 32 %>'>32 <% 32 %> 32</rtc>
+</ruby>
+</div>
+
+=====================================output=====================================
+<ruby>
+  <rtc> <% 32 %> </rtc>
+  <rtc> <% 32 %> </rtc>
+  <rtc>32<% 32 %>32</rtc>
+  <rtc>32 <% 32 %> 32</rtc>
+  <rtc class="<% 32 %>"><% 32 %></rtc>
+  <rtc class="<% 32 %>"> <% 32 %> </rtc>
+  <rtc class="<% 32 %>"> <% 32 %> </rtc>
+  <rtc class="<% 32 %>">32<% 32 %>32</rtc>
+  <rtc class="<% 32 %>">32 <% 32 %> 32</rtc>
+</ruby>
+
+<div>
+  <ruby>
+    <rtc> <% 32 %> </rtc>
+    <rtc> <% 32 %> </rtc>
+    <rtc>32<% 32 %>32</rtc>
+    <rtc>32 <% 32 %> 32</rtc>
+
+    <rtc class="<% 32 %>"><% 32 %></rtc>
+    <rtc class="<% 32 %>"> <% 32 %> </rtc>
+    <rtc class="<% 32 %>"> <% 32 %> </rtc>
+    <rtc class="<% 32 %>">32<% 32 %>32</rtc>
+    <rtc class="<% 32 %>">32 <% 32 %> 32</rtc>
+  </ruby>
+</div>
+
+================================================================================
+`;
+
+exports[`ruby.html.eex 1`] = `
+====================================options=====================================
+parsers: ["eex"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+
+<ruby>
+  <% 32 %>
+</ruby>
+<ruby> <% 32 %> </ruby>
+<ruby>32<% 32 %>32</ruby>
+<ruby>32 <% 32 %> 32</ruby>
+
+<ruby class='<% 32 %>'><% 32 %></ruby>
+<ruby class='<% 32 %>'>
+<% 32 %>
+</ruby>
+<ruby class='<% 32 %>'> <% 32 %> </ruby>
+<ruby class='<% 32 %>'>32<% 32 %>32</ruby>
+<ruby class='<% 32 %>'>32 <% 32 %> 32</ruby>
+
+<div>
+<ruby>
+  <% 32 %>
+</ruby>
+<ruby> <% 32 %> </ruby>
+<ruby>32<% 32 %>32</ruby>
+<ruby>32 <% 32 %> 32</ruby>
+
+<ruby class='<% 32 %>'><% 32 %></ruby>
+<ruby class='<% 32 %>'>
+<% 32 %>
+</ruby>
+<ruby class='<% 32 %>'> <% 32 %> </ruby>
+<ruby class='<% 32 %>'>32<% 32 %>32</ruby>
+<ruby class='<% 32 %>'>32 <% 32 %> 32</ruby>
+</div>
+
+=====================================output=====================================
+<ruby> <% 32 %> </ruby>
+<ruby> <% 32 %> </ruby>
+<ruby>32<% 32 %>32</ruby>
+<ruby>32 <% 32 %> 32</ruby>
+
+<ruby class="<% 32 %>"><% 32 %></ruby>
+<ruby class="<% 32 %>"> <% 32 %> </ruby>
+<ruby class="<% 32 %>"> <% 32 %> </ruby>
+<ruby class="<% 32 %>">32<% 32 %>32</ruby>
+<ruby class="<% 32 %>">32 <% 32 %> 32</ruby>
+
+<div>
+  <ruby> <% 32 %> </ruby>
+  <ruby> <% 32 %> </ruby>
+  <ruby>32<% 32 %>32</ruby>
+  <ruby>32 <% 32 %> 32</ruby>
+
+  <ruby class="<% 32 %>"><% 32 %></ruby>
+  <ruby class="<% 32 %>"> <% 32 %> </ruby>
+  <ruby class="<% 32 %>"> <% 32 %> </ruby>
+  <ruby class="<% 32 %>">32<% 32 %>32</ruby>
+  <ruby class="<% 32 %>">32 <% 32 %> 32</ruby>
+</div>
+
+================================================================================
+`;
+
+exports[`samp.html.eex 1`] = `
+====================================options=====================================
+parsers: ["eex"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+
+<samp>
+  <% 32 %>
+</samp>
+<samp> <% 32 %> </samp>
+<samp>32<% 32 %>32</samp>
+<samp>32 <% 32 %> 32</samp>
+
+<samp class='<% 32 %>'><% 32 %></samp>
+<samp class='<% 32 %>'>
+<% 32 %>
+</samp>
+<samp class='<% 32 %>'> <% 32 %> </samp>
+<samp class='<% 32 %>'>32<% 32 %>32</samp>
+<samp class='<% 32 %>'>32 <% 32 %> 32</samp>
+
+<div>
+<samp>
+  <% 32 %>
+</samp>
+<samp> <% 32 %> </samp>
+<samp>32<% 32 %>32</samp>
+<samp>32 <% 32 %> 32</samp>
+
+<samp class='<% 32 %>'><% 32 %></samp>
+<samp class='<% 32 %>'>
+<% 32 %>
+</samp>
+<samp class='<% 32 %>'> <% 32 %> </samp>
+<samp class='<% 32 %>'>32<% 32 %>32</samp>
+<samp class='<% 32 %>'>32 <% 32 %> 32</samp>
+</div>
+
+=====================================output=====================================
+<samp> <% 32 %> </samp>
+<samp> <% 32 %> </samp>
+<samp>32<% 32 %>32</samp>
+<samp>32 <% 32 %> 32</samp>
+
+<samp class="<% 32 %>"><% 32 %></samp>
+<samp class="<% 32 %>"> <% 32 %> </samp>
+<samp class="<% 32 %>"> <% 32 %> </samp>
+<samp class="<% 32 %>">32<% 32 %>32</samp>
+<samp class="<% 32 %>">32 <% 32 %> 32</samp>
+
+<div>
+  <samp> <% 32 %> </samp>
+  <samp> <% 32 %> </samp>
+  <samp>32<% 32 %>32</samp>
+  <samp>32 <% 32 %> 32</samp>
+
+  <samp class="<% 32 %>"><% 32 %></samp>
+  <samp class="<% 32 %>"> <% 32 %> </samp>
+  <samp class="<% 32 %>"> <% 32 %> </samp>
+  <samp class="<% 32 %>">32<% 32 %>32</samp>
+  <samp class="<% 32 %>">32 <% 32 %> 32</samp>
+</div>
+
+================================================================================
+`;
+
+exports[`var.html.eex 1`] = `
+====================================options=====================================
+parsers: ["eex"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+
+<var>
+  <% 32 %>
+</var>
+<var> <% 32 %> </var>
+<var>32<% 32 %>32</var>
+<var>32 <% 32 %> 32</var>
+
+<var class='<% 32 %>'><% 32 %></var>
+<var class='<% 32 %>'>
+<% 32 %>
+</var>
+<var class='<% 32 %>'> <% 32 %> </var>
+<var class='<% 32 %>'>32<% 32 %>32</var>
+<var class='<% 32 %>'>32 <% 32 %> 32</var>
+
+<div>
+<var>
+  <% 32 %>
+</var>
+<var> <% 32 %> </var>
+<var>32<% 32 %>32</var>
+<var>32 <% 32 %> 32</var>
+
+<var class='<% 32 %>'><% 32 %></var>
+<var class='<% 32 %>'>
+<% 32 %>
+</var>
+<var class='<% 32 %>'> <% 32 %> </var>
+<var class='<% 32 %>'>32<% 32 %>32</var>
+<var class='<% 32 %>'>32 <% 32 %> 32</var>
+</div>
+
+=====================================output=====================================
+<var> <% 32 %> </var>
+<var> <% 32 %> </var>
+<var>32<% 32 %>32</var>
+<var>32 <% 32 %> 32</var>
+
+<var class="<% 32 %>"><% 32 %></var>
+<var class="<% 32 %>"> <% 32 %> </var>
+<var class="<% 32 %>"> <% 32 %> </var>
+<var class="<% 32 %>">32<% 32 %>32</var>
+<var class="<% 32 %>">32 <% 32 %> 32</var>
+
+<div>
+  <var> <% 32 %> </var>
+  <var> <% 32 %> </var>
+  <var>32<% 32 %>32</var>
+  <var>32 <% 32 %> 32</var>
+
+  <var class="<% 32 %>"><% 32 %></var>
+  <var class="<% 32 %>"> <% 32 %> </var>
+  <var class="<% 32 %>"> <% 32 %> </var>
+  <var class="<% 32 %>">32<% 32 %>32</var>
+  <var class="<% 32 %>">32 <% 32 %> 32</var>
+</div>
+
+================================================================================
+`;

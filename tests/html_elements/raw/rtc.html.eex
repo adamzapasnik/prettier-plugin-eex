@@ -1,0 +1,35 @@
+
+<ruby>
+<rtc>
+  <% 32 %>
+</rtc>
+<rtc> <% 32 %> </rtc>
+<rtc>32<% 32 %>32</rtc>
+<rtc>32 <% 32 %> 32</rtc>
+<rtc class='<% 32 %>'><% 32 %></rtc>
+<rtc class='<% 32 %>'>
+<% 32 %>
+</rtc>
+<rtc class='<% 32 %>'> <% 32 %> </rtc>
+<rtc class='<% 32 %>'>32<% 32 %>32</rtc>
+<rtc class='<% 32 %>'>32 <% 32 %> 32</rtc>
+</ruby>
+
+<div>
+<ruby>
+<rtc>
+  <% 32 %>
+</rtc>
+<rtc> <% 32 %> </rtc>
+<rtc>32<% 32 %>32</rtc>
+<rtc>32 <% 32 %> 32</rtc>
+
+<rtc class='<% 32 %>'><% 32 %></rtc>
+<rtc class='<% 32 %>'>
+<% 32 %>
+</rtc>
+<rtc class='<% 32 %>'> <% 32 %> </rtc>
+<rtc class='<% 32 %>'>32<% 32 %>32</rtc>
+<rtc class='<% 32 %>'>32 <% 32 %> 32</rtc>
+</ruby>
+</div>

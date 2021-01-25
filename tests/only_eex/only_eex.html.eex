@@ -1,0 +1,12 @@
+
+
+<% re %>
+
+
+<%= if  do %>
+  43
+  <% else %>
+  <% 23 %>
+<% end %>
+
+<% looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong %>

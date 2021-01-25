@@ -40,3 +40,5 @@ sss
   <%= ddd %>
     class="dd"
 ></div>
+
+              <li role="presentation" class="<%= if show_person?(@person, @errors) do %>active<% end %>"><a href="#person" aria-controls="person" role="tab" data-toggle="tab">Person</a></li>

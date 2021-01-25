@@ -1,0 +1,17 @@
+<table>
+  <thead>
+   <tr><th><% re %></th></tr>
+   <tr><th>ew<% re %>ew</th></tr>
+   <tr><th>ew <% re %> ew</th></tr>
+   <tr><th> <% re %> </th></tr>
+
+    <tr><th><%= if 43 do %>
+      <% 43 %>
+    <% else %>
+        43
+        <% 43 %>
+    <% end %></th></tr>
+  </thead>
+</table>
+
+<table><thead><tr><th><% re %></th></tr></thead></table>

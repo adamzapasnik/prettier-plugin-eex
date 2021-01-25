@@ -1,0 +1,13 @@
+<head>
+  <% %> <% %>
+<%= if  do %>
+    <meta />
+<% %>
+      <% %>
+  <meta />
+<% else %>
+    <meta />
+    <% %>
+<% end %>
+  <meta /> <% %>
+</head>

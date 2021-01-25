@@ -1,0 +1,21 @@
+<div><% %></div>
+<div> <% %> </div>
+<div>e<% %>e</div>
+<div>e <% %> e</div>
+
+<div><div></div><% %><div></div></div>
+<div><div></div> <% %> <div></div></div>
+
+<div>
+  <%= if  do %>
+    <% %>
+  <% else %>
+    ew
+    <% %><% %>
+  <% end %>
+</div>
+
+<div><% looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong %></div>
+<div> <% looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong %> </div>
+<div>e<% looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong %>e</div>
+<div>e <% looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong %> e</div>

@@ -1,0 +1,32 @@
+
+<code>
+  <% 32 %>
+</code>
+<code> <% 32 %> </code>
+<code>32<% 32 %>32</code>
+<code>32 <% 32 %> 32</code>
+
+<code class='<% 32 %>'><% 32 %></code>
+<code class='<% 32 %>'>
+<% 32 %>
+</code>
+<code class='<% 32 %>'> <% 32 %> </code>
+<code class='<% 32 %>'>32<% 32 %>32</code>
+<code class='<% 32 %>'>32 <% 32 %> 32</code>
+
+<div>
+<code>
+  <% 32 %>
+</code>
+<code> <% 32 %> </code>
+<code>32<% 32 %>32</code>
+<code>32 <% 32 %> 32</code>
+
+<code class='<% 32 %>'><% 32 %></code>
+<code class='<% 32 %>'>
+<% 32 %>
+</code>
+<code class='<% 32 %>'> <% 32 %> </code>
+<code class='<% 32 %>'>32<% 32 %>32</code>
+<code class='<% 32 %>'>32 <% 32 %> 32</code>
+</div>

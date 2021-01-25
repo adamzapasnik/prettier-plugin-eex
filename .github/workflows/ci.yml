@@ -1,0 +1,55 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+
+jobs:
+  format:
+    name: Format
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Install OTP and Elixir
+        uses: actions/setup-elixir@v1
+        with:
+          otp-version: "22.3.4.1"
+          elixir-version: "1.10.3"
+
+      - run: mix compile --warnings-as-errors
+      - run: mix format --check-formatted
+
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Install OTP and Elixir
+        uses: actions/setup-elixir@v1
+        with:
+          otp-version: "22.3.4.1"
+          elixir-version: "1.10.3"
+
+      - name: Install
+        run: |
+          yarn policies set-version
+          yarn install --frozen-lockfile
+- name: Get yarn cache directory path
+  id: yarn-cache-dir-path
+  run: echo "::set-output name=dir::$(yarn cache dir)"
+
+- uses: actions/cache@v1
+  id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
+  with:
+    path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+    key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+    restore-keys: |
+      ${{ runner.os }}-yarn-

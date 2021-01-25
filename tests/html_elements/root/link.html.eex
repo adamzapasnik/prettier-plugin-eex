@@ -1,0 +1,3 @@
+<head>
+    <link rel="stylesheet" href="<%= static_url(@conn, "/css/embed.css") %>" />
+</head>

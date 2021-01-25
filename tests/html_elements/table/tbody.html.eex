@@ -1,0 +1,13 @@
+<table>
+  <tbody>
+   <% re %>
+    <%= if 43 do %>
+      <% 43 %>
+    <% else %>
+        43
+        <% 43 %>
+    <% end %>
+  </tbody>
+</table>
+
+<table><tbody><% re %></tbody></table>

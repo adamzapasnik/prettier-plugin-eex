@@ -1,0 +1,32 @@
+
+<samp>
+  <% 32 %>
+</samp>
+<samp> <% 32 %> </samp>
+<samp>32<% 32 %>32</samp>
+<samp>32 <% 32 %> 32</samp>
+
+<samp class='<% 32 %>'><% 32 %></samp>
+<samp class='<% 32 %>'>
+<% 32 %>
+</samp>
+<samp class='<% 32 %>'> <% 32 %> </samp>
+<samp class='<% 32 %>'>32<% 32 %>32</samp>
+<samp class='<% 32 %>'>32 <% 32 %> 32</samp>
+
+<div>
+<samp>
+  <% 32 %>
+</samp>
+<samp> <% 32 %> </samp>
+<samp>32<% 32 %>32</samp>
+<samp>32 <% 32 %> 32</samp>
+
+<samp class='<% 32 %>'><% 32 %></samp>
+<samp class='<% 32 %>'>
+<% 32 %>
+</samp>
+<samp class='<% 32 %>'> <% 32 %> </samp>
+<samp class='<% 32 %>'>32<% 32 %>32</samp>
+<samp class='<% 32 %>'>32 <% 32 %> 32</samp>
+</div>

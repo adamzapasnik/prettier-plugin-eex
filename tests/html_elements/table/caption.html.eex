@@ -1,0 +1,15 @@
+<table>
+  <caption>
+   <% re %>
+    <%= if 43 do %>
+      <% 43 %>
+    <% else %>
+        43
+        <% 43 %>
+    <% end %>
+  </caption>
+</table>
+
+<table><caption><% re %></caption></table>
+<table><caption>re<% re %>re</caption></table>
+

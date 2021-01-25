@@ -1,1 +1,1 @@
-run_spec(__dirname, ["eex"]);
+run_spec(__dirname, ['eex']);

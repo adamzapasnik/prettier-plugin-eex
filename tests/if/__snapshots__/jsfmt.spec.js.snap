@@ -1,8 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`js.eex - eex-verify: js.eex 1`] = `
-Object {
-  Symbol(raw): "<div>
+exports[`js.eex 1`] = `
+====================================options=====================================
+parsers: ["eex"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+
+
+<div
+<%= if bar13 %>
+    class="attribute"
+class="attribute"
+          <% else %>
+          class="attribute"
+<% end %>
+></div>
+
+<div>
   <%= if ss do %>
     ss
   <% else %>
@@ -27,12 +42,26 @@ sss
 sss  
   <% end %>
     </div>
-
+<li class="<%= active_link(@conn, PageController)%>"><a href="<%= page_path(@conn, :index) %>">Home</a></li>
 
 <div
   <%= ddd %>
-    class=\\"dd\\"
-></div>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    class="dd"
+></div>
+
+              <li role="presentation" class="<%= if show_person?(@person, @errors) do %>active<% end %>"><a href="#person" aria-controls="person" role="tab" data-toggle="tab">Person</a></li>
+
+=====================================output=====================================
+<div
+  <%= if bar13 %>
+  class="attribute"
+  class="attribute"
+  eexcundefined
+  <% else %>
+    class="attribute"
+  <% end %>
+></div>
+
 <div>
   <%= if ss do %>
     ss
@@ -58,8 +87,20 @@ sss
     sss
   <% end %>
 </div>
+<li class="<%= active_link(@conn, PageController) %>">
+  <a href="<%= page_path(@conn, :index) %>">Home</a>
+</li>
 
-<div <%= dd %> class=\\"dd\\"></div>
-",
-}
+<div <%= ddd %> class="dd"></div>
+
+<li
+  role="presentation"
+  class="<%= if show_person?(@person, @errors) do %>active<% end %>"
+>
+  <a href="#person" aria-controls="person" role="tab" data-toggle="tab"
+    >Person</a
+  >
+</li>
+
+================================================================================
 `;

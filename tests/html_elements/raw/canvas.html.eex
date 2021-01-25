@@ -1,0 +1,32 @@
+
+<canvas>
+  <% 32 %>
+</canvas>
+<canvas> <% 32 %> </canvas>
+<canvas>32<% 32 %>32</canvas>
+<canvas>32 <% 32 %> 32</canvas>
+
+<canvas class='<% 32 %>'><% 32 %></canvas>
+<canvas class='<% 32 %>'>
+<% 32 %>
+</canvas>
+<canvas class='<% 32 %>'> <% 32 %> </canvas>
+<canvas class='<% 32 %>'>32<% 32 %>32</canvas>
+<canvas class='<% 32 %>'>32 <% 32 %> 32</canvas>
+
+<div>
+<canvas>
+  <% 32 %>
+</canvas>
+<canvas> <% 32 %> </canvas>
+<canvas>32<% 32 %>32</canvas>
+<canvas>32 <% 32 %> 32</canvas>
+
+<canvas class='<% 32 %>'><% 32 %></canvas>
+<canvas class='<% 32 %>'>
+<% 32 %>
+</canvas>
+<canvas class='<% 32 %>'> <% 32 %> </canvas>
+<canvas class='<% 32 %>'>32<% 32 %>32</canvas>
+<canvas class='<% 32 %>'>32 <% 32 %> 32</canvas>
+</div>

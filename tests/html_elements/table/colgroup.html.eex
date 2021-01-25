@@ -1,0 +1,11 @@
+<table>
+  <colgroup>
+    <col>
+    <%= if e do %>
+    <col span="2" class="batman">
+    <% else %>
+    <col span="2" class="flash">
+    <% end %>
+    <% e %>
+  </colgroup>
+</table>

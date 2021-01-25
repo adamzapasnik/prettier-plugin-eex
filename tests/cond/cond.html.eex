@@ -1,0 +1,6 @@
+<%= cond do %>
+<% ee -> %>
+ede
+  <% true -> %>
+    <div>dsd</div>
+<% end %>

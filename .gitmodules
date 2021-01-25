@@ -1,0 +1,4 @@
+[submodule "prettier_eex_formatter"]
+path = prettier_eex_formatter
+url = git@github.com:adamzapasnik/prettier_eex_formatter.git
+branch = master

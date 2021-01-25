@@ -1,0 +1,32 @@
+
+<kbd>
+  <% 32 %>
+</kbd>
+<kbd> <% 32 %> </kbd>
+<kbd>32<% 32 %>32</kbd>
+<kbd>32 <% 32 %> 32</kbd>
+
+<kbd class='<% 32 %>'><% 32 %></kbd>
+<kbd class='<% 32 %>'>
+<% 32 %>
+</kbd>
+<kbd class='<% 32 %>'> <% 32 %> </kbd>
+<kbd class='<% 32 %>'>32<% 32 %>32</kbd>
+<kbd class='<% 32 %>'>32 <% 32 %> 32</kbd>
+
+<div>
+<kbd>
+  <% 32 %>
+</kbd>
+<kbd> <% 32 %> </kbd>
+<kbd>32<% 32 %>32</kbd>
+<kbd>32 <% 32 %> 32</kbd>
+
+<kbd class='<% 32 %>'><% 32 %></kbd>
+<kbd class='<% 32 %>'>
+<% 32 %>
+</kbd>
+<kbd class='<% 32 %>'> <% 32 %> </kbd>
+<kbd class='<% 32 %>'>32<% 32 %>32</kbd>
+<kbd class='<% 32 %>'>32 <% 32 %> 32</kbd>
+</div>

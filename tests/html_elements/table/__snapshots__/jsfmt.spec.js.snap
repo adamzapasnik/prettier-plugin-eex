@@ -1,0 +1,496 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`caption.html.eex 1`] = `
+====================================options=====================================
+parsers: ["eex"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+<table>
+  <caption>
+   <% re %>
+    <%= if 43 do %>
+      <% 43 %>
+    <% else %>
+        43
+        <% 43 %>
+    <% end %>
+  </caption>
+</table>
+
+<table><caption><% re %></caption></table>
+<table><caption>re<% re %>re</caption></table>
+
+
+=====================================output=====================================
+<table>
+  <caption>
+    <% re %>
+    <%= if 43 do %>
+      <% 43 %>
+    <% else %>
+      43
+      <% 43 %>
+    <% end %>
+  </caption>
+</table>
+
+<table>
+  <caption>
+    <% re %>
+  </caption>
+</table>
+<table>
+  <caption>
+    re
+    <% re %>
+    re
+  </caption>
+</table>
+
+================================================================================
+`;
+
+exports[`colgroup.html.eex 1`] = `
+====================================options=====================================
+parsers: ["eex"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+<table>
+  <colgroup>
+    <col>
+    <%= if e do %>
+    <col span="2" class="batman">
+    <% else %>
+    <col span="2" class="flash">
+    <% end %>
+    <% e %>
+  </colgroup>
+</table>
+
+=====================================output=====================================
+<table>
+  <colgroup>
+    <col />
+    <%= if e do %>
+      <col span="2" class="batman" />
+    <% else %>
+      <col span="2" class="flash" />
+    <% end %>
+    <% e %>
+  </colgroup>
+</table>
+
+================================================================================
+`;
+
+exports[`table.html.eex 1`] = `
+====================================options=====================================
+parsers: ["eex"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+<table>
+  <% re %>
+    <%= if 43 do %>
+      <% 43 %>
+    <% else %>
+        43
+        <% 43 %>
+    <% end %>
+</table>
+
+<table><% re %></table>
+
+=====================================output=====================================
+<table>
+  <% re %>
+  <%= if 43 do %>
+    <% 43 %>
+  <% else %>
+    43
+    <% 43 %>
+  <% end %>
+</table>
+
+<table>
+  <% re %>
+</table>
+
+================================================================================
+`;
+
+exports[`tbody.html.eex 1`] = `
+====================================options=====================================
+parsers: ["eex"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+<table>
+  <tbody>
+   <% re %>
+    <%= if 43 do %>
+      <% 43 %>
+    <% else %>
+        43
+        <% 43 %>
+    <% end %>
+  </tbody>
+</table>
+
+<table><tbody><% re %></tbody></table>
+
+=====================================output=====================================
+<table>
+  <tbody>
+    <% re %>
+    <%= if 43 do %>
+      <% 43 %>
+    <% else %>
+      43
+      <% 43 %>
+    <% end %>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <% re %>
+  </tbody>
+</table>
+
+================================================================================
+`;
+
+exports[`td.html.eex 1`] = `
+====================================options=====================================
+parsers: ["eex"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+<table>
+  <tbody>
+   <tr><td><% re %></td></tr>
+   <tr><td>ew<% re %>ew</td></tr>
+   <tr><td>ew <% re %> ew</td></tr>
+   <tr><td> <% re %> </td></tr>
+
+    <tr><td><%= if 43 do %>
+      <% 43 %>
+    <% else %>
+        43
+        <% 43 %>
+    <% end %></td></tr>
+  </tbody>
+</table>
+
+<table><tbody><tr><td><% re %></td></tr></tbody></table>
+
+<table>
+  <tbody>
+   <tr><td><% looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong %></td></tr>
+   <tr><td>ew<% looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong %>ew</td></tr>
+   <tr><td>ew <% looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong %> ew</td></tr>
+   <tr><td> <% looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong %> </td></tr>
+
+    <tr><td><%= if looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong do %>
+      <% looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong %>
+    <% else %>
+        looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong
+        <% looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong %>
+    <% end %></td></tr>
+  </tbody>
+</table>
+
+<table><tbody><tr><td><% looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong %></td></tr></tbody></table>
+
+=====================================output=====================================
+<table>
+  <tbody>
+    <tr>
+      <td><% re %></td>
+    </tr>
+    <tr>
+      <td>ew<% re %>ew</td>
+    </tr>
+    <tr>
+      <td>ew <% re %> ew</td>
+    </tr>
+    <tr>
+      <td><% re %></td>
+    </tr>
+
+    <tr>
+      <td>
+        <%= if 43 do %>
+          <% 43 %>
+        <% else %>
+          43
+          <% 43 %>
+        <% end %>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td><% re %></td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>
+        <% looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong %>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        ew<% looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong %>ew
+      </td>
+    </tr>
+    <tr>
+      <td>
+        ew
+        <% looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong %>
+        ew
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <% looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong %>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <%= if looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong do %>
+          <% looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong %>
+        <% else %>
+          looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong
+          <% looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong %>
+        <% end %>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>
+        <% looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong %>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+================================================================================
+`;
+
+exports[`tfoot.html.eex 1`] = `
+====================================options=====================================
+parsers: ["eex"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+<table>
+  <tfoot>
+   <% re %>
+    <%= if 43 do %>
+      <% 43 %>
+    <% else %>
+        43
+        <% 43 %>
+    <% end %>
+  </tfoot>
+</table>
+
+<table><tfoot><% re %></tfoot></table>
+
+=====================================output=====================================
+<table>
+  <tfoot>
+    <% re %>
+    <%= if 43 do %>
+      <% 43 %>
+    <% else %>
+      43
+      <% 43 %>
+    <% end %>
+  </tfoot>
+</table>
+
+<table>
+  <tfoot>
+    <% re %>
+  </tfoot>
+</table>
+
+================================================================================
+`;
+
+exports[`th.html.eex 1`] = `
+====================================options=====================================
+parsers: ["eex"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+<table>
+  <thead>
+   <tr><th><% re %></th></tr>
+   <tr><th>ew<% re %>ew</th></tr>
+   <tr><th>ew <% re %> ew</th></tr>
+   <tr><th> <% re %> </th></tr>
+
+    <tr><th><%= if 43 do %>
+      <% 43 %>
+    <% else %>
+        43
+        <% 43 %>
+    <% end %></th></tr>
+  </thead>
+</table>
+
+<table><thead><tr><th><% re %></th></tr></thead></table>
+
+=====================================output=====================================
+<table>
+  <thead>
+    <tr>
+      <th><% re %></th>
+    </tr>
+    <tr>
+      <th>ew<% re %>ew</th>
+    </tr>
+    <tr>
+      <th>ew <% re %> ew</th>
+    </tr>
+    <tr>
+      <th><% re %></th>
+    </tr>
+
+    <tr>
+      <th>
+        <%= if 43 do %>
+          <% 43 %>
+        <% else %>
+          43
+          <% 43 %>
+        <% end %>
+      </th>
+    </tr>
+  </thead>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th><% re %></th>
+    </tr>
+  </thead>
+</table>
+
+================================================================================
+`;
+
+exports[`thead.html.eex 1`] = `
+====================================options=====================================
+parsers: ["eex"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+<table>
+  <thead>
+   <% re %>
+    <%= if 43 do %>
+      <% 43 %>
+    <% else %>
+        43
+        <% 43 %>
+    <% end %>
+  </thead>
+</table>
+
+<table><thead><% re %></thead></table>
+
+=====================================output=====================================
+<table>
+  <thead>
+    <% re %>
+    <%= if 43 do %>
+      <% 43 %>
+    <% else %>
+      43
+      <% 43 %>
+    <% end %>
+  </thead>
+</table>
+
+<table>
+  <thead>
+    <% re %>
+  </thead>
+</table>
+
+================================================================================
+`;
+
+exports[`tr.html.eex 1`] = `
+====================================options=====================================
+parsers: ["eex"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+<table>
+  <tbody>
+   <tr><% re %></tr>
+   <tr> <% re %> </tr>
+
+    <tr><%= if 43 do %>
+      <% 43 %>
+    <% else %>
+        43
+        <% 43 %>
+    <% end %></tr>
+  </tbody>
+</table>
+
+<table><tbody><tr><% re %></tr></tbody></table>
+
+=====================================output=====================================
+<table>
+  <tbody>
+    <tr>
+      <% re %>
+    </tr>
+    <tr>
+      <% re %>
+    </tr>
+
+    <tr>
+      <%= if 43 do %>
+        <% 43 %>
+      <% else %>
+        43
+        <% 43 %>
+      <% end %>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <% re %>
+    </tr>
+  </tbody>
+</table>
+
+================================================================================
+`;

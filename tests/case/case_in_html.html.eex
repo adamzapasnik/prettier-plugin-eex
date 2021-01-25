@@ -1,0 +1,28 @@
+<div>
+   <%= case sm do %>
+    <% ds -> %>
+      ds
+    <% "text" -> %>
+      <div>ds</div>
+  <% end %>
+</div>
+<span>
+   <%= case sm do %>
+    <% ds -> %>
+      ds
+    <% "text" -> %>
+      <div>ds</div>
+    <% end %>
+
+</span>
+
+<div>
+   <%= case sm do %>
+    <% ds -> %>
+      ds
+    <% "text" -> %>
+      <div>
+      ds
+        </div>
+    <% end %>
+</div>
