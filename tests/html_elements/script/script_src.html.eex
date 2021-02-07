@@ -1,2 +1,0 @@
-<script src="<%= static_url(@conn, "/js/app.js") %>"></script>
-<script src="link<%= me %>?param"></script>

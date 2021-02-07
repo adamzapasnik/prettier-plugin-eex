@@ -1,8 +1,0 @@
-<script>
-  function m() {
-        obj = <% re %>
-    return obj + <% 2 %>
-  }
-
-  m(  <% r %>)
-</script>

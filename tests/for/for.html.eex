@@ -1,4 +1,0 @@
-<%= for item <- @items do %>
-        <%= item %>
-item
-    <% end %>
