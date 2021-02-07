@@ -131,7 +131,9 @@ function visualizeEndOfLine(text) {
 function createSnapshot(input, output, options) {
   const separatorWidth = 80;
   const printWidthIndicator =
-    options.printWidth > 0 && Number.isFinite(options.printWidth) ? `${' '.repeat(options.printWidth)}| printWidth` : [];
+    options.printWidth > 0 && Number.isFinite(options.printWidth)
+      ? `${' '.repeat(options.printWidth)}| printWidth`
+      : [];
   return []
     .concat(
       printSeparator(separatorWidth, 'options'),
