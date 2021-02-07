@@ -1,8 +1,0 @@
-<head>
-    <meta name="description" content="<%= description(assigns) %>" />
-  <meta name="viewport" content="width=device-width, initial-scale=<% %>" />
-  <% if  do %>
-    <meta name="viewport"/>
-    <% r %>
-  <% end %>
-</head>

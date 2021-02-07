@@ -1,6 +1,0 @@
-<script type="application/ld+json">
-{
-  "json": "<%= ew %>",
-  "d": <%= ew %>,
-}
-</script>

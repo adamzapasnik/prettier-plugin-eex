@@ -3,3 +3,4 @@ node_modules/
 .elixir_ls/
 prettier_eex_formatter_release
 .vscode/
+coverage/

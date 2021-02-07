@@ -1,6 +1,0 @@
-   <%= case sm do %>
-    <% ds -> %>
-      ds
-    <% "text" -> %>
-      43
-    <% end %>
