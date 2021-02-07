@@ -2,6 +2,7 @@
   "name": "prettier-plugin-eex",
   "version": "0.1.0",
   "license": "MIT",
+  "description": "Prettier plugin for .html.eex and .html.leex files",
   "repository": {
     "type": "git",
     "url": "https://github.com/adamzapasnik/prettier-plugin-eex"
