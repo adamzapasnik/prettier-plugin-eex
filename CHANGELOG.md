@@ -2,6 +2,12 @@
 
 All notable changes to the prettier-plugin-eex will be documented in this file.
 
+## v0.4.0 - 24 February 2021
+
+### Bug Fixes
+
+- Properly formats regular form_for expressions and the liveview ones (with </form> tags)
+
 ## v0.3.0 - 11 February 2021
 
 ### Bug Fixes
