@@ -1,0 +1,8 @@
+<div>
+  <%= f = form_for a, fn -> %>
+     <%= text_input f, :name %>
+  <% end %>
+  <div>
+     <form></form>
+  </div>
+</div>

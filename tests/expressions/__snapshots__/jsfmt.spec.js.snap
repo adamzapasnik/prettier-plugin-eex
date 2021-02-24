@@ -1,5 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`form_for.html.eex 1`] = `
+====================================options=====================================
+parsers: ["eex"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+<div>
+  <%= f = form_for a, fn -> %>
+     <%= text_input f, :name %>
+  <% end %>
+  <div>
+     <form></form>
+  </div>
+</div>
+
+=====================================output=====================================
+<div>
+  <%= f = form_for a, fn -> %>
+    <%= text_input f, :name %>
+  <% end %>
+  <div>
+    <form></form>
+  </div>
+</div>
+
+================================================================================
+`;
+
 exports[`liveview_form_for.html.leex 1`] = `
 ====================================options=====================================
 parsers: ["eex"]
@@ -23,6 +51,10 @@ printWidth: 80
       </form>
     </div>
   </div>
+
+    <%= f = form_for a, fn -> %>
+     <%= text_input f, :name %>
+  <% end %>
 </div>
 
 =====================================output=====================================
@@ -43,6 +75,10 @@ printWidth: 80
       </form>
     </div>
   </div>
+
+  <%= f = form_for a, fn -> %>
+    <%= text_input f, :name %>
+  <% end %>
 </div>
 
 ================================================================================
