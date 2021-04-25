@@ -2,7 +2,7 @@
 
 All notable changes to the prettier-plugin-eex will be documented in this file.
 
-## Unreleased
+## v0.5.0 - 25 April 2021
 
 ### Bug fixes
 
