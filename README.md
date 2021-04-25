@@ -6,6 +6,11 @@
   yarn add -D prettier prettier-plugin-eex
 ```
 
+## Supported versions
+
+- Elixir 1.8 minimum
+- Erlang OTP 21 minimum
+
 ## Config options
 
 * printWidth - used by Prettier directly

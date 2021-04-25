@@ -24,10 +24,12 @@ jobs:
         with:
           submodules: 'true'
 
-      - uses: erlef/setup-elixir@v1
+      # Used to build prettier_eex_formatter
+      # Versions from prettier_eex_formatter/.tools_versions
+      - uses: erlef/setup-beam@v1
         with:
-          otp-version: ${{ matrix.otp }}
-          elixir-version: ${{ matrix.elixir }}
+          otp-version: '21.3.8.22'
+          elixir-version: '1.8.2'
 
       - uses: actions/setup-node@v2
         with:
@@ -49,3 +51,14 @@ jobs:
       - run: yarn install --frozen-lockfile
       - run: yarn lint
       - run: yarn test
+
+      - uses: erlef/setup-beam@v1
+        with:
+          otp-version: ${{ matrix.otp }}
+          elixir-version: ${{ matrix.elixir }}
+
+      - name: Test Elixir integration
+        run: |
+          cd tests_elixir
+          elixir --version
+          mix prettier
