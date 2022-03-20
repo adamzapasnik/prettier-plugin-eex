@@ -1,0 +1,6 @@
+<%= live_component(
+      @socket,
+      MyApp.WeatherComponent,
+      id: "thermostat",
+      city: "Kraków"
+    ) %>

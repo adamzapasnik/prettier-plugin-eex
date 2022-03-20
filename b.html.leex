@@ -1,0 +1,32 @@
+  <%= f = form_for :filters, "#", [id: "filter_form", phx_change: :change, phx_target: @myself, phx_submit: :ignore] %>
+    <div>
+      <%= if Enum.empty?(@active_filters) do %>
+        <p class="text-gray-500 mb-3">No active filters</p>
+      <% else %>
+        <%= for {field, val} <- Enum.reverse(@active_filters) do %>
+          <div
+          id='<%= "#{field}-#{System.unique_integer()}" %>'
+          class="text-black w-auto flex items-center mb-3">
+            <span
+            phx-target="<%= @myself %>"
+            phx-click="remove"
+            phx-value-field="<%= field %>"
+            class="w-1/12 text-gray-400 cursor-pointer">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </span>
+            <span class="w-2/12"><%= name(field) %></span>
+            <span class="w-auto flex"><%= inputs(f, field, val) %></span>
+          </div>
+        <% end %>
+      <% end %>
+
+      <p class="inline-flex">Filter by:</p>
+      <%= for {field, _val} <- @filterable do %>
+        <span phx-target="<%= @myself %>" phx-click="add" phx-value-field="<%= field %>" class="inline-flex rounded cursor-pointer border border-gray-200 hover:bg-gray-50 text-xs px-2.5 py-1.5 ml-2 mt-2">
+          <%= name(field) %>
+        </span>
+      <% end %>
+      </div>
+      </form>

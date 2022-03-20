@@ -1,0 +1,247 @@
+yarn run v1.22.10
+$ /Users/adam/dev/oss-me/prettier-plugin-eex/node_modules/.bin/prettier --plugin . ./f.ex --write
+plugins: 0.162ms
+plugins: 0.006ms
+plugins: 0.003ms
+plugins: 0.006ms
+plugins: 0.004ms
+plugins: 0.007ms
+plugins: 0.003ms
+plugins: 0.003ms
+coreFormatopts {
+  filepath: 'f.ex',
+  arrowParens: 'always',
+  bracketSpacing: true,
+  cursorOffset: -1,
+  eexMultilineLineLength: 98,
+  eexMultilineNoParens: [],
+  embeddedLanguageFormatting: 'auto',
+  endOfLine: 'lf',
+  htmlWhitespaceSensitivity: 'css',
+  insertPragma: false,
+  jsxBracketSameLine: false,
+  jsxSingleQuote: false,
+  parser: 'ex',
+  plugins: [
+    {
+      languages: [Array],
+      options: [Object],
+      printers: [Object],
+      parsers: [Object]
+    },
+    {
+      languages: [Array],
+      options: [Object],
+      printers: [Object],
+      parsers: [Object]
+    },
+    { languages: [Array], printers: [Object], parsers: [Object] },
+    {
+      languages: [Array],
+      options: [Object],
+      printers: [Object],
+      parsers: [Object]
+    },
+    {
+      languages: [Array],
+      options: [Object],
+      printers: [Object],
+      parsers: [Object]
+    },
+    {
+      languages: [Array],
+      printers: [Object],
+      options: [Object],
+      parsers: [Object]
+    },
+    {
+      languages: [Array],
+      printers: [Object],
+      options: [Object],
+      parsers: [Object]
+    },
+    {
+      name: '.',
+      options: [Object],
+      defaultOptions: {},
+      parsers: [Object],
+      printers: [Object],
+      languages: [Array]
+    }
+  ],
+  pluginSearchDirs: [],
+  printWidth: 120,
+  proseWrap: 'preserve',
+  quoteProps: 'as-needed',
+  rangeEnd: 1498,
+  rangeStart: 0,
+  requirePragma: false,
+  semi: true,
+  singleQuote: true,
+  tabWidth: 2,
+  trailingComma: 'es5',
+  useTabs: false,
+  vueIndentScriptAndStyle: false,
+  astFormat: 'ex-ast',
+  locEnd: null,
+  locStart: null,
+  printer: { embed: [Function: embed], print: [Function: printEx] },
+  originalText: undefined
+}
+parsee: 0.226ms
+{ embed: [Function: embed], print: [Function: printEx] }
+parsing0
+
+coreFormatopts {
+  filepath: 'f.ex',
+  arrowParens: 'always',
+  bracketSpacing: true,
+  cursorOffset: -1,
+  eexMultilineLineLength: 98,
+  eexMultilineNoParens: [],
+  embeddedLanguageFormatting: 'auto',
+  endOfLine: 'lf',
+  htmlWhitespaceSensitivity: 'css',
+  insertPragma: false,
+  jsxBracketSameLine: false,
+  jsxSingleQuote: false,
+  parser: 'eex',
+  plugins: [
+    {
+      languages: [Array],
+      options: [Object],
+      printers: [Object],
+      parsers: [Object]
+    },
+    {
+      languages: [Array],
+      options: [Object],
+      printers: [Object],
+      parsers: [Object]
+    },
+    { languages: [Array], printers: [Object], parsers: [Object] },
+    {
+      languages: [Array],
+      options: [Object],
+      printers: [Object],
+      parsers: [Object]
+    },
+    {
+      languages: [Array],
+      options: [Object],
+      printers: [Object],
+      parsers: [Object]
+    },
+    {
+      languages: [Array],
+      printers: [Object],
+      options: [Object],
+      parsers: [Object]
+    },
+    {
+      languages: [Array],
+      printers: [Object],
+      options: [Object],
+      parsers: [Object]
+    },
+    {
+      languages: [Array],
+      options: [Object],
+      printers: [Object],
+      parsers: [Object]
+    },
+    {
+      languages: [Array],
+      options: [Object],
+      printers: [Object],
+      parsers: [Object]
+    },
+    { languages: [Array], printers: [Object], parsers: [Object] },
+    {
+      languages: [Array],
+      options: [Object],
+      printers: [Object],
+      parsers: [Object]
+    },
+    {
+      languages: [Array],
+      options: [Object],
+      printers: [Object],
+      parsers: [Object]
+    },
+    {
+      languages: [Array],
+      printers: [Object],
+      options: [Object],
+      parsers: [Object]
+    },
+    {
+      languages: [Array],
+      printers: [Object],
+      options: [Object],
+      parsers: [Object]
+    },
+    {
+      name: '.',
+      options: [Object],
+      defaultOptions: {},
+      parsers: [Object],
+      printers: [Object],
+      languages: [Array]
+    }
+  ],
+  pluginSearchDirs: [],
+  printWidth: 120,
+  proseWrap: 'preserve',
+  quoteProps: 'as-needed',
+  rangeEnd: 1396,
+  rangeStart: 0,
+  requirePragma: false,
+  semi: true,
+  singleQuote: true,
+  tabWidth: 2,
+  trailingComma: 'es5',
+  useTabs: false,
+  vueIndentScriptAndStyle: false,
+  astFormat: 'eex-ast',
+  locEnd: null,
+  locStart: null,
+  printer: { embed: [Function: embed], print: [Function: printEex] },
+  originalText: '\n' +
+    '    <%= f = form_for :filters, "#", [id: "filter_form", phx_change: :change, phx_target: @myself, phx_submit: :ignore] %>\n' +
+    '                                                  <div>\n' +
+    '                                                    <%= if Enum.empty?(@active_filters) do %>\n' +
+    '                                                      <p>No active filters</p>\n' +
+    '                                                    <% else %>\n' +
+    '                                                      <%= for {field, val} <- Enum.reverse(@active_filters) do %>\n' +
+    '                                                        <div id="<%= "#{field}-#{System.unique_integer()}" %>">\n' +
+    '                                                          <span\n' +
+    '                                                            phx-target="<%= @myself %>"\n' +
+    '                                                            phx-click="remove"\n' +
+    '                                                            phx-value-field="<%= field %>"\n' +
+    '                                                          >\n' +
+    '\n' +
+    '                                                          </span>\n' +
+    '                                                        </div>\n' +
+    '                                                      <% end %>\n' +
+    '                                                    <% end %>\n' +
+    '                                                  </div>\n' +
+    '                                                </form>\n' +
+    '    '
+}
+inparser
+parsee: 2.833ms
+{ embed: [Function: embed], print: [Function: printEex] }
+parsing1
+
+pluginPrint1: 0.109ms
+callPrint: 666.427ms
+printGenerically: 666.584ms
+printAstToDoc: 666.772ms
+printt: 666.879ms
+coreFormat: 673.161ms
+formatt: 666.447ms
+format: 666.553ms
+pluginPrint0: 666.941ms
+f.ex 678ms
+Done in 1.28s.
