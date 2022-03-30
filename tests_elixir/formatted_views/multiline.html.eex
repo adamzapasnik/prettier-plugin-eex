@@ -4,3 +4,7 @@
     c: "e"
   )
 %>
+
+<%= select f, :name, [
+      {:option, :value}
+    ] %>
