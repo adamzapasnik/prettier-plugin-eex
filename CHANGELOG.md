@@ -2,6 +2,12 @@
 
 All notable changes to the prettier-plugin-eex will be documented in this file.
 
+## v0.6.0 - 05 July 2022
+
+### Breaking Changes
+
+Change minimum versions supported to: Elixir 1.10 and Erlang OTP 22 minimum
+
 ## v0.5.0 - 25 April 2021
 
 ### Bug fixes
