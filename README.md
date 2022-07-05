@@ -8,8 +8,8 @@
 
 ## Supported versions
 
-- Elixir 1.8 minimum
-- Erlang OTP 21 minimum
+- Elixir 1.10 minimum
+- Erlang OTP 22 minimum
 
 ## Config options
 
